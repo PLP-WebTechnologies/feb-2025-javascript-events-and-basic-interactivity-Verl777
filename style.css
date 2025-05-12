@@ -60,3 +60,9 @@ input {
 input:focus {
     border-color: #3f51b5;
 }
+
+#formFeedback {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
