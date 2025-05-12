@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SipHaven - Drinkware Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to SipHaven!</h1>
+        <button id="changeTextButton">CLICK HERE😊!</button>
+    </header>
+
+    <section class="gallery">
+        <h2>Our Products</h2>
+        <div id="productGallery">
+            <img src="image1.jpg" alt="Thermo Mug" class="product-image">
+            <img src="image2.jpg" alt="Flask" class="product-image">
+            <img src="image3.jpg" alt="Stanley Cup" class="product-image">
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
