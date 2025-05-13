@@ -1,15 +1,96 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
 }
 
+/* Navigation Styles */
+nav {
+    background-color: #3f51b5;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Header Section */
 header {
     background-color: #3f51b5;
     color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* About Us Section */
+#aboutUs {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+#aboutUs h2 {
+    color: #3f51b5;
+}
+
+/* Gallery Section */
+.gallery {
     padding: 20px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Form Section */
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #3f51b5;
 }
 
 button {
@@ -25,44 +106,68 @@ button:hover {
     background-color: #45a049;
 }
 
-.gallery {
-    padding: 20px;
-}
-
-.product-image {
-    width: 100px;
-    margin: 10px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.2s ease;
-}
-
-.product-image:hover {
-    transform: scale(1.1);
-}
-
-.contact-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 20px;
-}
-
-input {
-    padding: 8px;
-    margin: 5px;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input:focus {
-    border-color: #3f51b5;
-}
-
+/* Form Feedback */
 #formFeedback {
-    color: red;
-    font-size: 14px;
     margin-top: 10px;
+    font-size: 14px;
+}
+
+#formFeedback.success {
+    color: green;
+}
+
+#formFeedback.error {
+    color: red;
+    white-space: pre-line;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust navigation for smaller screens */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Header styles for smaller screens */
+    header {
+        padding: 30px;
+    }
+
+    /* Adjust product images */
+    .product-image {
+        width: 80px;
+    }
+
+    /* Contact form adjustment */
+    .contact-form {
+        padding: 15px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    .product-image {
+        width: 70px;
+    }
+
+    .contact-form {
+        margin: 10px;
+    }
+
+    input, button {
+        width: 100%;
+    }
 }
